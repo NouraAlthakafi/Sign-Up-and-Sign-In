@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Sign Up and Sign In</string>
+    <string name="preference_users">com.example.kotlinSignUpandSignIn.PREFERENCE_USERS</string>
+</resources>

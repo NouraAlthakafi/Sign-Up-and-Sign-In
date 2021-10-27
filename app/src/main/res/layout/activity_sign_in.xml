@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".Pages.SignIn">
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/google"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/etEmailorUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleDrawable="@drawable/hidden"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/Azure">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassforIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSignInIn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/Azure"
+        android:textColor="@color/white"
+        android:onClick="signingInIn"
+        android:text="Sign In" />
+</LinearLayout>
